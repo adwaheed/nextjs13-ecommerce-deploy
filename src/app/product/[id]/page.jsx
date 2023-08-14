@@ -7,7 +7,7 @@ import myData from "@/components/data";
 import { useDispatch } from "react-redux";
 import { add } from "@/Redux/Cartslice";
 
-const page = ({ params }) => {
+const Page = ({ params }) => {
   const [products, setproducts] = useState([]);
   const dispatch = useDispatch();
   // const getProducts = async () => {
@@ -180,4 +180,4 @@ const page = ({ params }) => {
   );
 };
 
-export default page;
+export default Page;

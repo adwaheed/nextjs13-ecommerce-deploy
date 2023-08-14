@@ -5,7 +5,7 @@ import { remove } from "@/Redux/Cartslice";
 import { useDispatch, useSelector } from "react-redux";
 import Link from "next/link";
 
-const page = () => {
+const Page = () => {
   const dispatch = useDispatch();
   const cartitems = useSelector((state) => state.cart);
   const handleRemove = (id) => {
@@ -149,4 +149,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;
