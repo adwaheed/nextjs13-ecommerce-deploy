@@ -112,7 +112,7 @@ const Page = () => {
                     <span className="text-xs font-normal text-gray-400">
                       USD
                     </span>
-                    {totalPrice > 0 && totalPrice + 8}
+                    {totalPrice > 0 && (totalPrice + 8).toFixed(2)}
                   </p>
                 </div>
 
