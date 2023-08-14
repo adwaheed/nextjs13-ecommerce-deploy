@@ -8,18 +8,23 @@ import myData from "@/components/data";
 import { useDispatch } from "react-redux";
 import { add } from "@/Redux/Cartslice";
 
-export default function Home() {
+const page = () => {
   const [products, setproducts] = useState([]);
   const dispatch = useDispatch();
-
   // const getProducts = async () => {
   //   const response = await fetch("https://fakestoreapi.com/products");
   //   const data = await response.json();
-  //   setproducts(data);
+  //   const menClothing = data.filter(
+  //     (product) => product.category === "men's clothing"
+  //   );
+  //   setproducts(menClothing);
   // };
 
   const getProducts = async () => {
-    setproducts(myData);
+    const menClothing = myData.filter(
+      (product) => product.category === "men's clothing"
+    );
+    setproducts(menClothing);
   };
 
   useEffect(() => {
@@ -141,4 +146,6 @@ export default function Home() {
       ))}
     </div>
   );
-}
+};
+
+export default page;
