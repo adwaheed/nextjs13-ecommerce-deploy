@@ -44,6 +44,9 @@ const Navbar = () => {
                   href="/cart"
                 >
                   Your Cart <TiShoppingCart size={30} />
+                  <span className="absolute bg-black top-0 right-0 font-semibold rounded-full h-4 w-4 text-[12px] text-center">
+                    {myItem.length}
+                  </span>
                 </Link>
               </li>
               <li>
