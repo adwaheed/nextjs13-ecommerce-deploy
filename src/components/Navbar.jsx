@@ -40,26 +40,26 @@ const Navbar = () => {
             <ul className="text-[18px]">
               <li>
                 <Link
-                  className="flex items-center justify-center gap-1 w-[300px] py-2 text-slate-700 hover:bg-[gold] hover:text-white font-semibold ease-in duration-150 text-center"
+                  className="group/cart1 flex items-center justify-center gap-1 w-[300px] py-2 text-slate-700 hover:bg-[gold] hover:text-white font-semibold ease-in duration-150 text-center"
                   href="/cart"
                 >
-                  Your Cart <TiShoppingCart size={30} />
-                  <span className="absolute bg-black top-0 right-0 font-semibold rounded-full h-4 w-4 text-[12px] text-center">
+                  Your Cart <TiShoppingCart className="relative" size={30} />
+                  <span className="absolute bg-black top-[2px] right-[90px] font-semibold rounded-full h-4 w-4 text-[12px] text-center text-white group-hover/cart1:bg-white group-hover/cart1:text-black">
                     {myItem.length}
                   </span>
                 </Link>
               </li>
               <li>
                 <Link
-                  className="w-[300px] py-5 block text-slate-700 hover:bg-[gold] hover:text-white font-semibold ease-in duration-150 text-center"
-                  href="/"
+                  className="border-t border-slate-400 w-[300px] py-5 block text-slate-700 hover:bg-[gold] hover:text-white font-semibold ease-in duration-150 text-center"
+                  href={"/"}
                 >
                   Home
                 </Link>
               </li>
               <li>
                 <Link
-                  className="w-[300px] py-5 block text-slate-700 hover:bg-[gold] hover:text-white font-semibold ease-in duration-150 text-center"
+                  className="border-t border-slate-400 w-[300px] py-5 block text-slate-700 hover:bg-[gold] hover:text-white font-semibold ease-in duration-150 text-center"
                   href="/men"
                 >
                   Men
@@ -67,7 +67,7 @@ const Navbar = () => {
               </li>
               <li>
                 <Link
-                  className="w-[300px] py-5 block text-slate-700 hover:bg-[gold] hover:text-white font-semibold ease-in duration-150 text-center"
+                  className="border-t border-slate-400 w-[300px] py-5 block text-slate-700 hover:bg-[gold] hover:text-white font-semibold ease-in duration-150 text-center"
                   href="/women"
                 >
                   Women
@@ -75,7 +75,7 @@ const Navbar = () => {
               </li>
               <li>
                 <Link
-                  className="w-[300px] py-5 block text-slate-700 hover:bg-[gold] hover:text-white font-semibold ease-in duration-150 text-center"
+                  className="border-t border-slate-400 w-[300px] py-5 block text-slate-700 hover:bg-[gold] hover:text-white font-semibold ease-in duration-150 text-center"
                   href="/jewelery"
                 >
                   Jewelery
@@ -83,7 +83,7 @@ const Navbar = () => {
               </li>
               <li>
                 <Link
-                  className="w-[300px] py-5 block text-slate-700 hover:bg-[gold] hover:text-white font-semibold ease-in duration-150 text-center"
+                  className="border-t border-slate-400 w-[300px] py-5 block text-slate-700 hover:bg-[gold] hover:text-white font-semibold ease-in duration-150 text-center"
                   href="/electronics"
                 >
                   Electronics
