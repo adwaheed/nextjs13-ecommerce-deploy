@@ -40,6 +40,14 @@ const Navbar = () => {
             <ul className="text-[18px]">
               <li>
                 <Link
+                  className="flex items-center justify-center gap-1 w-[300px] py-2 text-slate-700 hover:bg-[gold] hover:text-white font-semibold ease-in duration-150 text-center"
+                  href="/cart"
+                >
+                  Your Cart <TiShoppingCart size={30} />
+                </Link>
+              </li>
+              <li>
+                <Link
                   className="w-[300px] py-5 block text-slate-700 hover:bg-[gold] hover:text-white font-semibold ease-in duration-150 text-center"
                   href="/"
                 >
